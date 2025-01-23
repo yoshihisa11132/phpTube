@@ -18,7 +18,7 @@
     $invget = new inv();
     // コマンドを組み立て
     $comarg = array(
-        "q" => $_GET["q"],
+        "q" => urlencode($_GET["q"]),
         "page" => $_GET["page"]
     );
     // 実行
