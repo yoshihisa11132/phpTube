@@ -133,7 +133,7 @@
         op.innerHTML = p[0];
         aq.appendChild(op);
     });
-    var playb;
+    var playb = "";
     function readcookie(){
         if (d.cookie.indexOf("quality") == -1) return;
         d.cookie.split(";").find((e) => e.indexOf("quality") != -1).split("=")[1].split(",").forEach((c, s) => {
@@ -156,6 +156,9 @@
     vid.addEventListener("play",play);
     vid.addEventListener("pause", pause);
     function play(){
+        if (playb != "" || vid.readyState < 3 || aud.readyState < 3){
+            return;
+        }
         aud.play();
         playb = setInterval(function(){
                 if (vid.readyState < 3){
@@ -179,6 +182,7 @@
     }
     function pause(){
         clearTimeout(playb);
+        playb = "";
         vid.pause();
         aud.pause();
     }
