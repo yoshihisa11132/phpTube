@@ -135,7 +135,7 @@
             searchres.forEach((dt) => {
                 let searched = `<div class="card shadow-sm" style="width: 18rem;">
                             <a href="${"./watch?v="+dt.videoId}">
-                                <img src="https://i.ytimg.com${dt.videoThumbnails.filter((s) => s.quality == 'default')[0].url}" class="card-img-top" alt="${dt.title}">
+                                <img src="${dt.videoThumbnails.filter((s) => s.quality == 'default')[0].url}" class="card-img-top" alt="${dt.title}">
                             </a>
                             <div class="card-body">
                             <h5 class="card-title">${dt.title}</h5>
