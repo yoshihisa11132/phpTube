@@ -120,7 +120,7 @@ if (check_cookie()) {
                     box-sizing:border-box;
                 }
                 .back{
-                background-image: url("./main.jpg");
+                background-image: url("./mail.jpg");
                 background-repeat: no-repeat;
                 background-clip: content-box;
                 background-position: center;
@@ -170,8 +170,8 @@ if (check_cookie()) {
                     &emsp;背景にしています。<br>
                     &emsp;ボカロ曲を流せますのでゆっくりしてくだせぇ<br>
                     &emsp;<br>
-                    <audio controls src="/ilike/幽霊みたい.mp3"></audio>
-                    <audio controls src="/ilike/amatyua.mp3"></audio>
+                    <audio controls src="./幽霊みたい.mp3"></audio>
+                    <audio controls src="./amatyua.mp3"></audio>
                     &emsp;<a href="http://yossi1113.shop/2025/02/brazill/" target="_blank">コメント一覧(パスワード:教育委員会さんとデジタルアーツさんとシスコさんとあと諸々の委員会とフィルタリング業者は見ないでね)</a><br>
                     <div style="margin-bottom:5rem;"></div>
                     <form onsubmit="return newsys(event)">
