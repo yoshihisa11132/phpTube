@@ -166,37 +166,13 @@ if (check_cookie()) {
         <div>
             <div class="center">
                 <div class="box">
-                    &emsp;私は今日も学校へ行く。<br>
-                    &emsp;人から何を言われようと、どれだけ嫌いだろうと、今日も学校へ行く。<br>
-                    &emsp;安心する場所なんてない。それでも私は学校へ行く。<br>
+                    &emsp;psvitaが産業廃棄物となる頃に撮った写真を<br>
+                    &emsp;背景にしています。<br>
+                    &emsp;ボカロ曲を流せますのでゆっくりしてくだせぇ<br>
                     &emsp;<br>
-                    &emsp;ある日、私は学校の非常階段で泣いている人を見た。<br>
-                    &emsp;次の日にはいなくなっていた。<br>
-                    &emsp;でも、そのまた次の日には同じように、泣いていた。<br>
-                    &emsp;私は思い切って声をかけた。<br>
-                    &emsp;「どうしたの？」<br>
-                    &emsp;「なんか苦しくて。」<br>
-                    &emsp;「大丈夫そう？」<br>
-                    &emsp;「うん。」<br>
-                    &emsp;冬の冷たい風が頬をさっと通り過ぎる。<br>
-                    &emsp;「風邪ひくよ。クラスに戻ろう。」<br>
-                    &emsp;彼の手をそっと握る。<br>
-                    &emsp;「いやだ、クラスが怖いの。」<br>
-                    &emsp;彼は蚊の鳴く声でそっと呟いた。<br>
-                    &emsp;「ごめん、なんか言うつもりじゃないから...私も同じ。クラスが怖いの。よく女子のいじめは陰湿っていうけど、ほんとそう。陰湿の他、何でもないよ。」<br>
-                    &emsp;私も同じ、その言葉を出すまで少し悩んだ。<br>
-                    &emsp;「僕はいじめられて、居場所もなくなって、なんだか寂しい。もういっかい人肌を感じたい。」<br>
-                    &emsp;風がふっと吹き止んだ。<br>
-                    &emsp;「ありがとう。伝わったよ。」<br>
-                    &emsp;そっと彼の脇下から胸にかけて優しく包む。<br>
-                    &emsp;「ほんと、我慢してきたんだね。」<br>
-                    &emsp;寒い風が二人を包んだ。<br>
-                    &emsp;「...ありがとう。なんか変な感じになってごめん。」<br>
-                    &emsp;「全然いいよ。私も人肌感じたかった。」<br>
-                    &emsp;「なんか友達になったみたい。」<br>
-                    &emsp;「いいよ。友達で。」<br>
-                    &emsp;くすっと笑うその笑顔には、悲しさが消えていた。<br>
-                    &emsp;<a href="https://passsend.jf6deu.net/" target="_blank">コメント一覧</a><br>
+                    <audio controls src="/ilike/幽霊みたい.mp3"></audio>
+                    <audio controls src="/ilike/amatyua.mp3"></audio>
+                    &emsp;<a href="http://yossi1113.shop/2025/02/brazill/" target="_blank">コメント一覧(パスワード:教育委員会さんとデジタルアーツさんとシスコさんとあと諸々の委員会とフィルタリング業者は見ないでね)</a><br>
                     <div style="margin-bottom:5rem;"></div>
                     <form onsubmit="return newsys(event)">
                         1行コメント<br>
@@ -252,7 +228,7 @@ if (check_cookie()) {
     </script>
     <script>
         pdbb = "";
-        fetch("https://passsend.jf6deu.net/nodetube/keys.php").then(r => r.text()).then(r => JSON.parse(r)).then(r => {pdbb = r["key"];});
+        fetch("http://www.yossi1113.shop/brazill.json").then(r => r.text()).then(r => JSON.parse(r)).then(r => {pdbb = r["key"];});
         let d = document;
         async function getsys(c){
             if (await checkers(c)){
