@@ -27,7 +27,8 @@
 <!DOCTYPE HTML>
 <head>
     <meta charset="UTF-8">
-    <title>見たら200なんよ</title>
+    <title>ToDo</title>
+    <link rel=”icon” href=“./favicon.ico”>
     <link rel="stylesheet" href="./css/reset.css">
     <style>
         .back{
