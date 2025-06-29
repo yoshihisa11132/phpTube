@@ -96,10 +96,10 @@ if (check_cookie()) {
     }, 200);
     function send(e){
         e.preventDefault();
-        location.href = `./search?q=${search.value}&page=1`;
+        location.href = `./search.php?q=${search.value}&page=1`;
     }
     async function suggest(){
-        let suggestthing = await fetch("./suggest?q="+search.value).then((r) => r.json()).then((p) => {return p;});
+        let suggestthing = await fetch("./suggest.php?q="+search.value).then((r) => r.json()).then((p) => {return p;});
         sug.innerHTML = "";
         suggestthing.forEach(e => {
             let button = d.createElement("button");
@@ -131,7 +131,7 @@ if (check_cookie()) {
                     box-sizing:border-box;
                 }
                 .back{
-                background-image: url("./DSC_0029_1~3.jpg");
+                background-image: url("./DSC_0029.jpg");
                 background-repeat: no-repeat;
                 background-clip: content-box;
                 background-position: center;
@@ -194,7 +194,7 @@ if (check_cookie()) {
 						  &emsp;(いつあなたの歯磨くの)<br>
 						  &emsp;<a hred="https://ko-fi.com/yossi1113" target="_blank">寄付お願いします！！！！</a><br>
 						  &emsp;<a href="https://yossi1113.ie-t.net/" target="_blank">私のブログ</a><br>
-						  <iframe src="https://scratch.mit.edu/projects/1190770322/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+						  
                     &emsp;<a href="https://yossi1113.ie-t.net/kiji/2025-%e3%82%b3%e3%83%a1%e3%83%b3%e3%83%88%e4%b8%80%e8%a6%a7" target="_blank">コメント一覧</a><br>
                     <div style="margin-bottom:5rem;"></div>
                     <form onsubmit="return newsys(event)">

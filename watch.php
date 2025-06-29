@@ -80,6 +80,15 @@
     </style>
 </head>
 <body>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('yossi1113', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#00b9fe',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
     <span class="back"></span>
     <span class="back-touka"></span>
     <div class="center">
@@ -199,11 +208,11 @@
     }, 200);
     function send(e){
         e.preventDefault();
-        location.href = `./search?q=${search.value}&page=1`;
+        location.href = `./search.php?q=${search.value}&page=1`;
     }
     async function suggest(){
         let suggestthing;
-        await fetch("/suggest?q="+search.value).then((r) => r.json()).then((p) => {suggestthing = p});
+        await fetch("/suggest.php?q="+search.value).then((r) => r.json()).then((p) => {suggestthing = p});
         sug.innerHTML = "";
         suggestthing.forEach(e => {
             let button = d.createElement("button");

@@ -111,11 +111,11 @@
         }, 200);
         function send(e){
             e.preventDefault();
-            location.href = `./search?q=${search.value}&page=1`;
+            location.href = `./search.php?q=${search.value}&page=1`;
         }
         async function suggest(){
             let suggestthing;
-            await fetch("/suggest?q="+search.value).then((r) => r.json()).then((p) => {suggestthing = p});
+            await fetch("/suggest.php?q="+search.value).then((r) => r.json()).then((p) => {suggestthing = p});
             sug.innerHTML = "";
             suggestthing.forEach(e => {
                 let button = d.createElement("button");
@@ -135,7 +135,7 @@
             let page = new URL(location.href).searchParams.get("page");
             searchres.forEach((dt) => {
                 let searched = `<div class="card shadow-sm" style="width: 18rem;">
-                            <a href="${"./watch?v="+dt.videoId}">
+                            <a href="${"./watch.php?v="+dt.videoId}">
                                 <img src="${dt.videoThumbnails.filter((s) => s.quality == 'default')[0].url}" class="card-img-top" alt="${dt.title}">
                             </a>
                             <div class="card-body">
@@ -152,10 +152,10 @@
             if (!isNaN(Number(page))){
                     let nextbutton = "";
                     if (page >= 2){
-                        nextbutton += `<span><a href="./search?q=${search.value}&page=${Number(page) - 1}">前へ</a></span>`;
+                        nextbutton += `<span><a href="./search.php?q=${search.value}&page=${Number(page) - 1}">前へ</a></span>`;
                     }
                     if (page >= 1){
-                        nextbutton += `<span style="margin-left:0.5em;"><a href="./search?q=${search.value}&page=${Number(page) + 1}">次へ</a></span>`;
+                        nextbutton += `<span style="margin-left:0.5em;"><a href="./search.php?q=${search.value}&page=${Number(page) + 1}">次へ</a></span>`;
                     }
                     revnext.insertAdjacentHTML("beforeend", nextbutton);
                 }
